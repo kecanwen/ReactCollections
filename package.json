@@ -1,0 +1,19 @@
+{
+  "name": "kk_react_code_learn",
+  "version": "1.0.0",
+  "description": "react源码学习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kecanwen/kk_react_learn_code.git"
+  },
+  "author": "kecanwen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kecanwen/kk_react_learn_code/issues"
+  },
+  "homepage": "https://github.com/kecanwen/kk_react_learn_code#readme"
+}
