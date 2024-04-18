@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.box{
+  height: 70vh;
+  width: 100vw;
+  
+}
+
+.box ul{
+  height: 70vh;
+  display: flex;
+  align-items: end;
+}
+
+.box ul li{
+  width:30px;
+  list-style: none;
+  background-color: #61dafb;
+}
