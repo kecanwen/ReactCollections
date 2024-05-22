@@ -6,6 +6,6 @@ export type Options = {
 
 }
 
-export Service = {
+export type Service = {
   
 }
