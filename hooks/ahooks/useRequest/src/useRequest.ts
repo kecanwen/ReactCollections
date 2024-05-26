@@ -14,8 +14,8 @@ function useRequest<TData, TParams extends any[]>(
   options?: Options<TData, TParams>,
   plugins?: Plugin<TData, TParams>[],
 ) {
-  return useRequestImplement<TData, TParams>(service, options, [
-    ...(plugins || []),
+  return useRequestImplement<TData, TParams>(service, options, [ // useRequestImplement 对 Fetch 类进行实例化
+    ...(plugins || []),// 插件列表 用户可以自定义插件拓展功能
     useDebouncePlugin,
     useLoadingDelayPlugin,
     usePollingPlugin,
