@@ -1,7 +1,10 @@
-export type Plugin<TData, TParams extends any[]> = {
-  ()
-}
-// Options, Plugin, Service
+import type { DependencyList } from 'react';
+import type { CachedData } from './src/utils/cache';
+import type Fetch from './Fetch';
+
+
+export type Service<TData, TParams extends any[]> = (...args: TParams) => Promise<TData>;
+
 export interface Options<TData, TParams extends any[]> {
   manual?: boolean;
 
@@ -57,6 +60,10 @@ export interface Options<TData, TParams extends any[]> {
   // [key: string]: any;
 }
 
-export type Service = {
-  
+export type Plugin<TData, TParams extends any[]> = {
+  (fetchInstance: Fetch<TData, TParams>, options: Options<TData, TParams>): PluginReturn<
+    TData,
+    TParams
+  >;
 }
+

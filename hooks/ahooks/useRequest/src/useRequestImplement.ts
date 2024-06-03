@@ -1,9 +1,11 @@
-import useCreation from '../../useCreation';
-import useLatest from '../../useLatest';
-import useMemoizedFn from '../../useMemoizedFn';
-import useMount from '../../useMount';
-import useUnmount from '../../useUnmount';
-import useUpdate from '../../useUpdate';
+import useCreation from '../../useCreation.ts';
+import useLatest from '../../useLatest/index.ts';
+import useMemoizedFn from '../../useMemoizedFn/index.ts';
+import useMount from '../../useMount/index.ts';
+import useUnmount from '../../useUnmount/index.ts';
+import useUpdate from '../../useUpdate/index.ts';
+import type { Service, Options, } from '../types';
+
 
 function useRequestImplement<TData, TParams extends any[]>(
   service: Service<TData, TParams>,
